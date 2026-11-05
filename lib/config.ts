@@ -135,17 +135,17 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   // ─── Meta & SEO ──────────────────────────────────────────────────────────
-  siteTitle: "Achintha Sewmina — Software Engineer",
+  siteTitle: "Tharushi Senanayake — Software Engineer",
   siteDescription:
-    "Portfolio of Achintha Sewmina — a software engineer specialising in full-stack development, cloud infrastructure, and modern web technologies.",
+    "Portfolio of Tharushi Senanayake — a software engineer specialising in full-stack development, cloud infrastructure, and modern web technologies.",
   siteUrl: "https://achinthasewmina.com",
   ogImage: "/og-image.png",
 
   // ─── Personal Info ───────────────────────────────────────────────────────
   profile: {
-    name: "Achintha Sewmina",
+    name: "Tharushi Senanayake",
     role: "Software Engineer",
-    initials: "AS",
+    initials: "TS",
     email: "sewminagamage@gmail.com",
     phone: "+94 740503225",
     location: "Colombo, Sri Lanka",
@@ -157,7 +157,7 @@ export const siteConfig: SiteConfig = {
   // ─── Hero Section ────────────────────────────────────────────────────────
   hero: {
     greeting: "Hello, I'm",
-    headline: "Achintha Sewmina",
+    headline: "Tharushi Senanayake",
     description:
       "I build performant, accessible web applications and scalable backend systems. Passionate about clean code, great UX, and shipping products that make an impact.",
     yearsExperience: "5+",
@@ -174,7 +174,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/achinthasewmina",
+      url: "https://linkedin.com/in/sewminagamage",
       label: "LinkedIn Profile",
     },
     {
@@ -301,19 +301,19 @@ export const siteConfig: SiteConfig = {
   testimonials: [
     {
       quote:
-        "Achintha is an exceptional software engineer. His ability to architect scalable systems while keeping code clean and maintainable made a huge impact on our delivery timeline.",
+        "Tharushi is an exceptional software engineer. Her ability to architect scalable systems while keeping code clean and maintainable made a huge impact on our delivery timeline.",
       name: "Nuwan Perera",
       role: "Engineering Manager, Sysco LABS",
     },
     {
       quote:
-        "Working with Achintha was a smooth and inspiring experience. He has a rare eye for frontend finesse paired with solid backend fundamentals.",
+        "Working with Tharushi was a smooth and inspiring experience. She has a rare eye for frontend finesse paired with solid backend fundamentals.",
       name: "Kavindi Jayawardena",
       role: "Lead Product Designer, PickMe",
     },
     {
       quote:
-        "Achintha's contributions to complex APIs and microservices were outstanding. Dependable, proactive, and consistently delivers high-quality engineering.",
+        "Tharushi's contributions to complex APIs and microservices were outstanding. Dependable, proactive, and consistently delivers high-quality engineering.",
       name: "Dinuka Fernando",
       role: "Tech Lead, WSO2",
     },
