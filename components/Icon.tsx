@@ -1,24 +1,70 @@
+/**
+ * Icon — Lightweight inline SVG icon component.
+ *
+ * Usage: <Icon name="arrow" size={18} />
+ *
+ * All icons use a 24×24 viewBox with stroke-based paths.
+ * Add new icons by adding entries to the `paths` record below.
+ */
+
 const paths: Record<string, string> = {
+  // Navigation
   arrow: "M7 17 17 7M8 7h9v9",
+  chevL: "m15 6-6 6 6 6",
+  chevR: "m9 6 6 6-6 6",
+  
+  // Actions
   download: "M12 4v11m0 0-4-4m4 4 4-4M5 20h14",
+  send: "M21 3 10 14M21 3l-7 18-4-7-7-4z",
+  search: "M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5",
+  "external-link": "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3",
+  
+  // Contact
   mail: "M4 6h16v12H4zM4 7l8 6 8-6",
   phone: "M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z",
   pin: "M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11zM12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
-  send: "M21 3 10 14M21 3l-7 18-4-7-7-4z",
+  
+  // UI
   layers: "m12 3 9 5-9 5-9-5zM3 13l9 5 9-5",
   user: "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0",
   spark: "M12 3c.6 5 3 7.4 8 8-5 .6-7.4 3-8 8-.6-5-3-7.4-8-8 5-.6 7.4-3 8-8z",
-  chevL: "m15 6-6 6 6 6",
-  chevR: "m9 6 6 6-6 6",
   box: "M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8",
   pen: "M4 20l4-1 11-11-3-3L5 16zM14 6l3 3",
+  palette: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c.88 0 1.6-.72 1.6-1.6 0-.41-.17-.79-.44-1.06-.28-.28-.44-.65-.44-1.06 0-.88.72-1.6 1.6-1.6h1.88c3.19 0 5.8-2.61 5.8-5.8 0-5.46-4.43-8.88-10-8.88zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 8 6.5 8s1.5.67 1.5 1.5S7.33 11 6.5 11zm3-4C8.67 7 8 6.33 8 5.5S8.67 4 9.5 4s1.5.67 1.5 1.5S10.33 7 9.5 7zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 4 14.5 4s1.5.67 1.5 1.5S15.33 7 14.5 7zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 8 17.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z",
   grid: "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
-  search: "M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5",
+  
+  // Tech
+  code: "m16 18 6-6-6-6M8 6l-6 6 6 6",
+  terminal: "M4 17l6-6-6-6M12 19h8",
+  server: "M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01",
+  cloud: "M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z",
+  database: "M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zM4 12c0 2.21 3.58 4 8 4s8-1.79 8-4",
+  
+  // Social
+  github: "M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 17.97 6.14 17.97c-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z",
+  linkedin: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z",
+  twitter: "M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 12 7.5v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z",
 };
 
-export default function Icon({ name, size = 18 }: { name: string; size?: number }) {
+export default function Icon({
+  name,
+  size = 18,
+}: {
+  name: string;
+  size?: number;
+}) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d={paths[name] ?? paths.box} />
     </svg>
   );

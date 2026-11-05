@@ -1,8 +1,38 @@
 {
-  "name": "aarav-portfolio",
+  "name": "portfolio-template",
   "version": "1.0.0",
-  "private": true,
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "tsc --noEmit" },
-  "dependencies": { "next": "14.2.15", "react": "18.3.1", "react-dom": "18.3.1" },
-  "devDependencies": { "@types/node": "20.14.0", "@types/react": "18.3.3", "@types/react-dom": "18.3.0", "typescript": "5.5.4" }
+  "description": "A modern, customizable developer portfolio template built with Next.js 14 & TypeScript. Fork it, edit one config file, and deploy.",
+  "author": "Achintha Sewmina",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/achinthasewmina/portfolio-template"
+  },
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "typescript",
+    "template",
+    "developer",
+    "foss"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.5.4"
+  }
 }

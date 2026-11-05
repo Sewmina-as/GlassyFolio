@@ -1,31 +1,37 @@
 "use client";
 import { useState } from "react";
+import { siteConfig } from "@/lib/config";
 
 /**
- * Portrait component — Displays your profile picture in the hero section.
+ * Portrait — Displays your profile picture in the hero section.
  *
  * How it works:
- *  1. Tries to load the image at /dp.jpeg (which maps to public/dp.jpeg).
- *  2. If the image fails to load (e.g. file missing), it falls back to
- *     showing your initials ("AS") inside a styled placeholder div.
+ *  1. Tries to load the image at the path set in config (default: /dp.jpeg).
+ *  2. Falls back to showing your initials if the image can't be loaded.
  *
  * To change your photo:
- *  → Replace public/dp.jpeg with your new image (keep the same filename).
+ *  → Replace the image file in /public and update `portraitPath` in config.ts
  */
 export default function Portrait() {
-  // Track whether the image failed to load
   const [failed, setFailed] = useState(false);
+  const { name, initials, portraitPath } = siteConfig.profile;
 
-  // Fallback: show initials if the image can't be loaded
   if (failed) {
     return (
       <div className="portrait-fallback" role="img" aria-label="Portrait placeholder">
-        <span>AS</span>
+        <span>{initials}</span>
       </div>
     );
   }
 
-  // Primary: render the actual profile photo
   // eslint-disable-next-line @next/next/no-img-element
-  return <img className="portrait-img" src="/dp.jpeg" alt="Achintha Sewmina" onError={() => setFailed(true)} />;
+  return (
+    <img
+      className="portrait-img"
+      src={portraitPath}
+      alt={name}
+      loading="eager"
+      onError={() => setFailed(true)}
+    />
+  );
 }

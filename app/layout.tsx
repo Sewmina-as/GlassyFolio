@@ -1,19 +1,49 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
-const font = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font", display: "swap" });
-
-// Site-wide SEO metadata — shows in the browser tab and search engine results
 export const metadata: Metadata = {
-  title: "Achintha Sewmina — Software Engineer",
-  description: "Portfolio of Achintha Sewmina, a software engineer crafting intuitive, beautiful experiences.",
+  title: siteConfig.siteTitle,
+  description: siteConfig.siteDescription,
+  openGraph: {
+    title: siteConfig.siteTitle,
+    description: siteConfig.siteDescription,
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.profile.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.siteTitle,
+    description: siteConfig.siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={font.variable}>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
 }
+
