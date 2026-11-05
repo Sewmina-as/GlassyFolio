@@ -36,7 +36,8 @@ A modern, glassmorphic developer portfolio template built with **Next.js 14**, *
 │   ├── config.ts            # ⭐ YOUR CONFIG — edit this file
 │   └── data.ts              # Re-exports config for components
 ├── public/
-│   └── dp.jpeg              # Your profile photo
+│   ├── dp.png               # Your profile photo
+│   └── icon.svg             # Your browser tab logo / favicon
 ├── .env.example             # Environment variable template
 ├── LICENSE                  # MIT License
 ├── CONTRIBUTING.md          # Contribution guidelines
@@ -70,9 +71,10 @@ export const siteConfig: SiteConfig = {
 };
 ```
 
-### 3. Add Your Photo
+### 3. Add Your Photo & Tab Logo
 
-Replace `public/dp.jpeg` with your profile photo (or update `portraitPath` in config).
+- Replace `public/dp.png` with your profile photo (or update `portraitPath` in config).
+- Replace `public/icon.svg` with your own browser tab icon/logo.
 
 ### 4. Run
 

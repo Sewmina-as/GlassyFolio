@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: siteConfig.profile.faviconPath ?? "/icon.svg",
+    shortcut: siteConfig.profile.faviconPath ?? "/icon.svg",
+    apple: siteConfig.profile.faviconPath ?? "/icon.svg",
+  },
 };
 
 export default function RootLayout({

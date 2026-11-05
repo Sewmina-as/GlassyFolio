@@ -77,6 +77,7 @@ export interface SiteConfig {
     location: string;
     resumePath: string;
     portraitPath: string;
+    faviconPath?: string;
   };
 
   // Hero section
@@ -150,6 +151,7 @@ export const siteConfig: SiteConfig = {
     location: "Colombo, Sri Lanka",
     resumePath: "/resume.pdf", // Place your resume in the /public folder
     portraitPath: "/dp.png", // Place your portrait in the /public folder
+    faviconPath: "/icon.svg", // Tab icon / logo — replace public/icon.svg with your logo
   },
 
   // ─── Hero Section ────────────────────────────────────────────────────────
