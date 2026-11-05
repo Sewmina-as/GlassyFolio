@@ -12,6 +12,8 @@ const paths: Record<string, string> = {
   arrow: "M7 17 17 7M8 7h9v9",
   chevL: "m15 6-6 6 6 6",
   chevR: "m9 6 6 6-6 6",
+  menu: "M4 6h16M4 12h16M4 18h16",
+  close: "M18 6 6 18M6 6l12 12",
   
   // Actions
   download: "M12 4v11m0 0-4-4m4 4 4-4M5 20h14",

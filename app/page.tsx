@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Portrait from "@/components/Portrait";
 import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 import {
   brands,
   profile,
@@ -258,35 +259,7 @@ export default function Home() {
         <Reveal id="testimonials">
           <p className="eyebrow">Testimonials</p>
           <h3>What Clients Say</h3>
-          <div className="slider">
-            <div className="grid-3">
-              {testimonials.map((t) => (
-                <figure key={t.name} className="card quote">
-                  <blockquote>{t.quote}</blockquote>
-                  <figcaption>
-                    <span className="avatar">
-                      {t.name
-                        .split(" ")
-                        .map((w) => w[0])
-                        .join("")}
-                    </span>
-                    <span>
-                      <b>{t.name}</b>
-                      <small>{t.role}</small>
-                    </span>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-            <div className="arrows">
-              <button aria-label="Previous">
-                <Icon name="chevL" size={14} />
-              </button>
-              <button aria-label="Next">
-                <Icon name="chevR" size={14} />
-              </button>
-            </div>
-          </div>
+          <TestimonialsSlider testimonials={testimonials} />
         </Reveal>
 
         {/* ── Contact ── */}
