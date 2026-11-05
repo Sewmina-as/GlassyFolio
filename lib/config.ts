@@ -169,7 +169,7 @@ export const siteConfig: SiteConfig = {
   socials: [
     {
       platform: "GitHub",
-      url: "https://github.com/achinthasewmina",
+      url: "https://github.com/sewmina-as",
       label: "GitHub Profile",
     },
     {
