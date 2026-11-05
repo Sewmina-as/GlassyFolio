@@ -183,7 +183,7 @@ export const siteConfig: SiteConfig = {
   ],
 
   // ─── Trusted-by Brands ──────────────────────────────────────────────────
-  brands: ["Google", "Microsoft", "airbnb", "HubSpot", "dribbble"],
+  brands: ["WSO2", "Sysco LABS", "Virtusa", "PickMe", "IFS", "Dialog"],
 
   // ─── Navigation ──────────────────────────────────────────────────────────
   nav: [
@@ -199,9 +199,9 @@ export const siteConfig: SiteConfig = {
   // ─── About Section ──────────────────────────────────────────────────────
   about: {
     eyebrow: "About Me",
-    heading: "Building digital products that people love to use",
+    heading: "Building high-impact software from Colombo to the world",
     description:
-      "I'm a software engineer based in Colombo, Sri Lanka with over five years of experience turning ideas into reliable, well-crafted software. I specialise in full-stack web development with React, Next.js, and Node.js, and I'm equally comfortable working across the stack — from pixel-perfect UIs to cloud infrastructure and CI/CD pipelines.",
+      "I'm a software engineer based in Colombo, Sri Lanka with over five years of experience building reliable, scalable web applications. From collaborating with local tech companies to engineering digital solutions for global clients, I focus on clean architecture, modern full-stack workflows, and intuitive user experiences.",
     stats: [
       { icon: "layers", value: "5+", label: "Years Experience" },
       { icon: "mail", value: "30+", label: "Projects Completed" },
@@ -252,22 +252,22 @@ export const siteConfig: SiteConfig = {
   // ─── Featured Projects ──────────────────────────────────────────────────
   projects: [
     {
-      title: "Finova — Finance App",
-      kind: "Full-Stack Web App",
+      title: "RupeeFlow — LankaPay Finance",
+      kind: "Full-Stack Fintech App",
       hue: "violet",
-      url: "https://github.com/achinthasewmina/finova",
+      url: "https://github.com/achinthasewmina/rupeeflow",
     },
     {
-      title: "Analytics Dashboard",
-      kind: "React + Node.js",
+      title: "TeaLog — Plantation IoT Analytics",
+      kind: "Industrial IoT + React",
       hue: "blue",
-      url: "https://github.com/achinthasewmina/analytics-dashboard",
+      url: "https://github.com/achinthasewmina/tealog-analytics",
     },
     {
-      title: "SaaS Landing Page",
-      kind: "Next.js + Tailwind",
+      title: "Colombo Transit — Live Tracker",
+      kind: "Realtime Web Application",
       hue: "slate",
-      url: "https://github.com/achinthasewmina/saas-landing",
+      url: "https://github.com/achinthasewmina/colombo-transit",
     },
   ],
 
@@ -299,21 +299,21 @@ export const siteConfig: SiteConfig = {
   testimonials: [
     {
       quote:
-        "Achintha is an exceptional engineer. He understands user needs deeply and delivers outstanding results on every project.",
-      name: "Rohit Sharma",
-      role: "Product Manager, Google",
+        "Achintha is an exceptional software engineer. His ability to architect scalable systems while keeping code clean and maintainable made a huge impact on our delivery timeline.",
+      name: "Nuwan Perera",
+      role: "Engineering Manager, Sysco LABS",
     },
     {
       quote:
-        "Working with Achintha was a smooth and inspiring experience. His attention to detail and code quality is truly impressive.",
-      name: "Neha Verma",
-      role: "Design Lead, Microsoft",
+        "Working with Achintha was a smooth and inspiring experience. He has a rare eye for frontend finesse paired with solid backend fundamentals.",
+      name: "Kavindi Jayawardena",
+      role: "Lead Product Designer, PickMe",
     },
     {
       quote:
-        "Achintha's work not only looks amazing but also solves real user problems with solid engineering. Highly recommended!",
-      name: "Karan Malhotra",
-      role: "Founder, Startupx",
+        "Achintha's contributions to complex APIs and microservices were outstanding. Dependable, proactive, and consistently delivers high-quality engineering.",
+      name: "Dinuka Fernando",
+      role: "Tech Lead, WSO2",
     },
   ],
 
