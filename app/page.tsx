@@ -44,6 +44,30 @@ export default function Home() {
                 Download CV <Icon name="download" size={15} />
               </a>
             </div>
+
+            {/* Creative Hero Floating Social Dock */}
+            {socials.length > 0 && (
+              <div className="hero-social-dock glass">
+                <span className="dock-hint">Connect:</span>
+                <div className="dock-icons">
+                  {socials.map((s) => (
+                    <a
+                      key={s.platform}
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="dock-btn"
+                      aria-label={s.label}
+                      title={s.platform}
+                    >
+                      <Icon name={s.icon ?? s.platform.toLowerCase()} size={15} />
+                      <span className="dock-btn-label">{s.platform}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="trusted">
               <small>Trusted by</small>
               <ul>
@@ -173,14 +197,32 @@ export default function Home() {
                 className="card project"
                 {...(p.url ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
-                <div className={`shot hue-${p.hue}`} aria-hidden="true">
-                  <div className="mock">
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                    <i />
+                <div className={`shot hue-${p.hue}`}>
+                  <div className="browser-mock">
+                    <div className="browser-bar">
+                      <span className="browser-dot dot-r" />
+                      <span className="browser-dot dot-y" />
+                      <span className="browser-dot dot-g" />
+                      <span className="browser-title">{p.title.split("—")[0].trim().toLowerCase().replace(/\s+/g, "")}.dev</span>
+                    </div>
+                    {p.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        className="project-img"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="mock" aria-hidden="true">
+                        <i />
+                        <i />
+                        <i />
+                        <i />
+                        <i />
+                        <i />
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="meta">
@@ -295,11 +337,28 @@ export default function Home() {
 
         {/* ── Footer ── */}
         <footer className="foot">
-          <span>
-            © {new Date().getFullYear()} {profile.name}. {footer.text}
-          </span>
+          <div className="foot-brand">
+            <span>
+              © {new Date().getFullYear()} {footer.ownerName ?? "Achintha Sewmina"}. {footer.text}
+            </span>
+          </div>
+          <div className="foot-socials">
+            {socials.map((s) => (
+              <a
+                key={s.platform}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="foot-social-btn"
+                aria-label={s.label}
+                title={s.platform}
+              >
+                <Icon name={s.icon ?? s.platform.toLowerCase()} size={14} />
+              </a>
+            ))}
+          </div>
           {footer.showBackToTop && (
-            <a href="#home">
+            <a href="#home" className="foot-top">
               Back to top <Icon name="arrow" size={13} />
             </a>
           )}

@@ -13,6 +13,7 @@ export interface SocialLink {
   platform: string;
   url: string;
   label: string;
+  icon?: string;
 }
 
 /** A stat card shown in the About section (icon + number + label). */
@@ -42,6 +43,7 @@ export interface Project {
   title: string;
   kind: string;
   hue: "violet" | "blue" | "slate";
+  image?: string;
   url?: string;
 }
 
@@ -124,6 +126,7 @@ export interface SiteConfig {
 
   // Footer
   footer: {
+    ownerName: string;
     text: string;
     showBackToTop: boolean;
   };
@@ -171,16 +174,37 @@ export const siteConfig: SiteConfig = {
       platform: "GitHub",
       url: "https://github.com/sewmina-as",
       label: "GitHub Profile",
+      icon: "github",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/sewminagamage",
+      url: "https://linkedin.com/in/achinthasewmina",
       label: "LinkedIn Profile",
+      icon: "linkedin",
     },
     {
       platform: "Twitter",
       url: "https://twitter.com/achinthasewmina",
       label: "Twitter / X Profile",
+      icon: "twitter",
+    },
+    {
+      platform: "Instagram",
+      url: "https://instagram.com/achinthasewmina",
+      label: "Instagram Profile",
+      icon: "instagram",
+    },
+    {
+      platform: "YouTube",
+      url: "https://youtube.com/@achinthasewmina",
+      label: "YouTube Channel",
+      icon: "youtube",
+    },
+    {
+      platform: "Dribbble",
+      url: "https://dribbble.com/achinthasewmina",
+      label: "Dribbble Portfolio",
+      icon: "dribbble",
     },
   ],
 
@@ -257,19 +281,22 @@ export const siteConfig: SiteConfig = {
       title: "RupeeFlow — LankaPay Finance",
       kind: "Full-Stack Fintech App",
       hue: "violet",
-      url: "https://github.com/achinthasewmina/rupeeflow",
+      image: "/project1.jpg",
+      url: "https://github.com/sewmina-as/rupeeflow",
     },
     {
       title: "TeaLog — Plantation IoT Analytics",
       kind: "Industrial IoT + React",
       hue: "blue",
-      url: "https://github.com/achinthasewmina/tealog-analytics",
+      image: "/project2.jpg",
+      url: "https://github.com/sewmina-as/tealog-analytics",
     },
     {
       title: "Colombo Transit — Live Tracker",
       kind: "Realtime Web Application",
       hue: "slate",
-      url: "https://github.com/achinthasewmina/colombo-transit",
+      image: "/project3.jpg",
+      url: "https://github.com/sewmina-as/colombo-transit",
     },
   ],
 
@@ -321,6 +348,7 @@ export const siteConfig: SiteConfig = {
 
   // ─── Footer ─────────────────────────────────────────────────────────────
   footer: {
+    ownerName: "Achintha Sewmina",
     text: "All rights reserved.",
     showBackToTop: true,
   },

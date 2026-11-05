@@ -1,13 +1,13 @@
 {
-  "name": "portfolio-template",
+  "name": "GlassyFolio-template",
   "version": "1.0.0",
   "description": "A modern, customizable developer portfolio template built with Next.js 14 & TypeScript. Fork it, edit one config file, and deploy.",
-  "author": "Achintha Sewmina",
+  "author": "Achintha Sewmina Gamage<sewminagamage@gmail.com>",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/achinthasewmina/portfolio-template"
+    "url": "https://github.com/Sewmina-as/GlassyFolio.git"
   },
   "keywords": [
     "portfolio",
