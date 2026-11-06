@@ -8,7 +8,7 @@ A high-performance, glassmorphic developer portfolio template built with **Next.
 
 Fork it, personalize one config file, drop your images, and deploy to Vercel or any static host in under 5 minutes.
 <p align="center">
-  <strong><a href="https://gallsy-folio.vercel.app" target="_blank">🌐 View Live Demo</a></strong>
+  <strong><a href="[https://gallsy-folio.vercel.app](https://glassy-folio.vercel.app/)" target="_blank">🌐 View Live Demo</a></strong>
 </p>
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
