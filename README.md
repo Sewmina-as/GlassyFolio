@@ -7,6 +7,9 @@
 A high-performance, glassmorphic developer portfolio template built with **Next.js 14**, **TypeScript**, and **CSS Grid**. Crafted with Apple-inspired frosted glass materials, fluid micro-interactions, responsive typography, and a single-file configuration architecture.
 
 Fork it, personalize one config file, drop your images, and deploy to Vercel or any static host in under 5 minutes.
+<p align="center">
+  <strong><a href="https://gallsy-folio.vercel.app" target="_blank">🌐 View Live Demo</a></strong>
+</p>
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
