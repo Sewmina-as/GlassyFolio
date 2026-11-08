@@ -1,8 +1,8 @@
+<center># 🚀 Developer Portfolio Template</center>
+
 <p align="center">
   <img src="./public/banner.png" alt="GlassyFolio Project Banner" width="100%">
 </p>
-
-# 🚀 Developer Portfolio Template
 
 A high-performance, glassmorphic developer portfolio template built with **Next.js 14**, **TypeScript**, and **CSS Grid**. Crafted with Apple-inspired frosted glass materials, fluid micro-interactions, responsive typography, and a single-file configuration architecture.
 
