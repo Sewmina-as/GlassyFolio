@@ -1,4 +1,4 @@
-<center># 🚀 Developer Portfolio Template</center>
+<h1 align="center">🚀 Developer Portfolio Template</h1>
 
 <p align="center">
   <img src="./public/banner.png" alt="GlassyFolio Project Banner" width="100%">
